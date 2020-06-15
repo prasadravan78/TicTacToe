@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ravan\\source\\repos\\TicTacToe\\TicTacToe.csproj": {}
+    "C:\\Users\\ravan\\Documents\\Learnings\\Dot Net Core\\Code\\TicTacToe\\TicTacToe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ravan\\source\\repos\\TicTacToe\\TicTacToe.csproj": {
+    "C:\\Users\\ravan\\Documents\\Learnings\\Dot Net Core\\Code\\TicTacToe\\TicTacToe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ravan\\source\\repos\\TicTacToe\\TicTacToe.csproj",
+        "projectUniqueName": "C:\\Users\\ravan\\Documents\\Learnings\\Dot Net Core\\Code\\TicTacToe\\TicTacToe.csproj",
         "projectName": "TicTacToe",
-        "projectPath": "C:\\Users\\ravan\\source\\repos\\TicTacToe\\TicTacToe.csproj",
+        "projectPath": "C:\\Users\\ravan\\Documents\\Learnings\\Dot Net Core\\Code\\TicTacToe\\TicTacToe.csproj",
         "packagesPath": "C:\\Users\\ravan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ravan\\source\\repos\\TicTacToe\\obj\\",
+        "outputPath": "C:\\Users\\ravan\\Documents\\Learnings\\Dot Net Core\\Code\\TicTacToe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -42,6 +42,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
