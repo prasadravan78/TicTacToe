@@ -64,12 +64,24 @@ namespace TicTacToe.Controllers
             return View(user);
         }
 
+        /// <summary>
+        /// Creates new User in application.  
+        /// </summary>
+        /// <param name="user">User entity</param>
+        /// <returns>Success message/ Form errors</returns>
         [HttpPost]
         public async Task<IActionResult> CreateUser(User user)
         {
-            await _userService.RegisterUser(user);
+            if (ModelState.IsValid)
+            {
+                await _userService.RegisterUser(user);
+                return Content("Success");
+            }
 
-            return Content("Success");
+            UserViewModel userViewModel = new UserViewModel();
+            userViewModel.User = user;
+
+            return View("UserDetails", userViewModel);
         }
 
         #endregion Public Methods
