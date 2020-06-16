@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using TicTacToe.Extensions;
 using TicTacToe.Services;
 
 namespace TicTacToe
@@ -44,7 +45,7 @@ namespace TicTacToe
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseCommunicationMiddleware();
             app.UseRouting();
 
             app.UseAuthorization();
